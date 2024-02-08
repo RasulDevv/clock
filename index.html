@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock(replay)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="links">
+            <ul>
+                <li><a href="#" data-link="hour" class="links_link active">Часы</a></li>
+                <li><a href="#" data-link="timer" class="links_link links_link_extra">Секундомер<span></span></a></li>
+            </ul>
+        </div>
+
+        <div class="clock_and_timer">
+            <div class="arrow_clock active">
+                <div class="arr_clock">
+                    <div class="arr_cl0"><span>12</span><span>6</span></div>
+                    <div class="arr_cl1"><span>1</span><span>7</span></div>
+                    <div class="arr_cl2"><span>2</span><span>8</span></div>
+                    <div class="arr_cl3"><span>3</span><span>9</span></div>
+                    <div class="arr_cl4"><span>4</span><span>10</span></div>
+                    <div class="arr_cl5"><span>5</span><span>11</span></div>
+
+                    <div class="arr_clock__controls">
+                        <div class="arr_hour"><div></div></div>
+                        <div class="arr_minute"><div></div></div>
+                        <div class="arr_second"><div></div></div>
+                    </div>
+
+                </div>
+
+                <div class="num_clock">
+                    <span class="num_clock_el" data-numClock="hour">00</span>
+                    <span class="num_clock_el" data-numClock="points">:</span>
+                    <span class="num_clock_el" data-numClock="minute">00</span>
+                </div>
+            </div>
+
+            <div class="timer">
+                <div class="timer_content">
+                    <div>
+                        <div><span class="timers" data-timers="hour">0</span><span>ЧАС.</span></div>
+                        <div><span class="timers" data-timers="minute">0</span><span>МИН.</span></div>
+                        <div><span class="timers" data-timers="second">0</span><span>СЕК.</span></div>
+                    </div>
+                    <button id="timer_btn">start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
